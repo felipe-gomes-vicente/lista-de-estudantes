@@ -19,14 +19,22 @@ const students = [
     noteTwo: 10,
   },
   {
-    name: 'Dorameira da Lua',
+    name: 'Dorameira na Lua',
     noteOne: 6,
     noteTwo: 7,
   },
   {
-    name: 'Estudante neurotico',
+    name: 'Estudante neurótico',
     noteOne: 8,
     noteTwo: 7,
   },  
 ]
 
+function average(noteOne, noteTwo) {
+  result = (noteOne + noteTwo)/ 2 
+  return result
+}
+
+for ( let student of students ) {
+  alert(` A media do(a) Aluno(a) ${student.name} é: ${average(student.noteOne, student.noteTwo)}`)
+}
